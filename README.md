@@ -1,2 +1,2 @@
-notification-api
+notification samples
 ================
