@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='notification'>
+
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='de.simplycloud.gwt.Notification' />
+
+	<entry-point class='de.simplycloud.gwt.client.notification.sample.NotificationTest' />
+
+	<source path='client' />
+</module>
