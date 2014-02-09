@@ -78,7 +78,7 @@ public class NotificationTest implements EntryPoint {
 
 					@Override
 					public void call(NotificationPermission permission) {
-						Notification noti = new Notification("Title", NotificationOptions.create().body("body").dir("rtl").icon("https://blog.twitter.com/sites/all/themes/gazebo/img/twitter-bird-white-on-blue.png"));
+						Notification noti = new Notification("Title", NotificationOptions.create().body("body").dir("rtl").icon("http://devisen-handeln.org/forex-news/wp-content/uploads/2013/11/twitter-ipo.png"));
 						noti.addCloseHandler(new NotificationCloseHandler() {
 
 							@Override
