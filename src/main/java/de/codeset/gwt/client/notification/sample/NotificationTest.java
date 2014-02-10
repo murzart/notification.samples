@@ -30,7 +30,15 @@ public class NotificationTest implements EntryPoint {
 
 	@Override
 	public void onModuleLoad() {
+		
+		if(Notification.isSupported())
+			init();
+		else
+			Window.alert("Notifications are not supported by your browser");
 
+	}
+
+	private void init() {
 		Button btn = new Button("Request");
 		btn.addClickHandler(new ClickHandler() {
 
@@ -78,7 +86,7 @@ public class NotificationTest implements EntryPoint {
 
 					@Override
 					public void call(NotificationPermission permission) {
-						Notification noti = new Notification("Title", NotificationOptions.create().body("body").dir("rtl").icon("http://devisen-handeln.org/forex-news/wp-content/uploads/2013/11/twitter-ipo.png"));
+						Notification noti = Notification.createIfSupported("Title", NotificationOptions.create().body("body").dir("rtl").icon("http://devisen-handeln.org/forex-news/wp-content/uploads/2013/11/twitter-ipo.png"));
 						noti.addCloseHandler(new NotificationCloseHandler() {
 
 							@Override
@@ -113,6 +121,8 @@ public class NotificationTest implements EntryPoint {
 		});
 
 		RootPanel.get().add(btn3);
+		
+		RootPanel.get().add(new NotificationForm());
 	}
 
 }
