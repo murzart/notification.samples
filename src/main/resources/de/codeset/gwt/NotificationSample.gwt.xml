@@ -2,7 +2,7 @@
 <module rename-to='notification'>
 
 	<inherits name='com.google.gwt.user.User' />
-	<inherits name='de.codeset.gwt.Notification' />
+	<inherits name='de.codeset.gwt.notification.NotificationApi' />
 
 	<entry-point class='de.codeset.gwt.client.notification.sample.NotificationTest' />
 

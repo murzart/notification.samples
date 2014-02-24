@@ -11,9 +11,13 @@
 	<name>GWT Notification-Samples</name>
 
 	<properties>
-		<gwtVersion>2.6.0</gwtVersion>
+		<gwt.version>2.6.0</gwt.version>
+		<gwt.plugin.version>2.6.0</gwt.plugin.version>
+		
+		<notification.version>1.0.0-SNAPSHOT</notification.version>
 		
 		<webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
+		
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -21,13 +25,13 @@
 		<dependency>
 			<groupId>com.google.gwt</groupId>
 			<artifactId>gwt-servlet</artifactId>
-			<version>${gwtVersion}</version>
+			<version>${gwt.version}</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.gwt</groupId>
 			<artifactId>gwt-user</artifactId>
-			<version>${gwtVersion}</version>
+			<version>${gwt.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- <dependency> -->
@@ -52,7 +56,7 @@
 		<dependency>
 			<groupId>de.codeset.gwt.notification</groupId>
 			<artifactId>de.codeset.gwt.notification.notification-api</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>${notification.version}</version>
 		</dependency>
 	</dependencies>
 
@@ -66,7 +70,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
-				<version>2.6.0</version>
+				<version>${gwt.plugin.version}</version>
 				<executions>
 					<execution>
 						<goals>

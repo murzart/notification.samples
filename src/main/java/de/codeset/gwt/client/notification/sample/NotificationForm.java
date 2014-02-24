@@ -13,16 +13,16 @@ import com.google.gwt.user.client.ui.LongBox;
 import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
 
-import de.codeset.gwt.client.notification.Notification;
-import de.codeset.gwt.client.notification.Notification.NotificationOptions;
-import de.codeset.gwt.client.notification.eventing.click.NotificationClickEvent;
-import de.codeset.gwt.client.notification.eventing.click.NotificationClickHandler;
-import de.codeset.gwt.client.notification.eventing.close.NotificationCloseEvent;
-import de.codeset.gwt.client.notification.eventing.close.NotificationCloseHandler;
-import de.codeset.gwt.client.notification.eventing.error.NotificationErrorEvent;
-import de.codeset.gwt.client.notification.eventing.error.NotificationErrorHandler;
-import de.codeset.gwt.client.notification.eventing.show.NotificationShowEvent;
-import de.codeset.gwt.client.notification.eventing.show.NotificationShowHandler;
+import de.codeset.gwt.notification.api.client.Notification;
+import de.codeset.gwt.notification.api.client.Notification.NotificationOptions;
+import de.codeset.gwt.notification.api.client.eventing.click.NotificationClickEvent;
+import de.codeset.gwt.notification.api.client.eventing.click.NotificationClickHandler;
+import de.codeset.gwt.notification.api.client.eventing.close.NotificationCloseEvent;
+import de.codeset.gwt.notification.api.client.eventing.close.NotificationCloseHandler;
+import de.codeset.gwt.notification.api.client.eventing.error.NotificationErrorEvent;
+import de.codeset.gwt.notification.api.client.eventing.error.NotificationErrorHandler;
+import de.codeset.gwt.notification.api.client.eventing.show.NotificationShowEvent;
+import de.codeset.gwt.notification.api.client.eventing.show.NotificationShowHandler;
 
 /**
  * @author MarZl

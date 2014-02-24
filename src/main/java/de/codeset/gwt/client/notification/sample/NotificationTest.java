@@ -8,9 +8,9 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 
-import de.codeset.gwt.client.notification.Notification;
-import de.codeset.gwt.client.notification.Notification.NotificationPermissionCallback;
-import de.codeset.gwt.client.notification.NotificationPermission;
+import de.codeset.gwt.notification.api.client.Notification;
+import de.codeset.gwt.notification.api.client.Notification.NotificationPermissionCallback;
+import de.codeset.gwt.notification.api.client.NotificationPermission;
 
 /**
  * @author MarZl 
